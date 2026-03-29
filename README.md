@@ -1,6 +1,6 @@
 # Portfólio - Gabriel Henrique 🚀
 
-Bem-vindo ao meu portfólio profissional! Este projeto foi desenvolvido para demonstrar minhas habilidades e competências como **Desenvolvedor Full Stack**, com foco inicial nos requisitos para a vaga de Desenvolvedor Trainee no Grupo IGL.
+Bem-vindo ao meu portfólio profissional! Este projeto foi desenvolvido para demonstrar minhas habilidades e competências como **Desenvolvedor Full Stack**.
 
 ## 🎯 Sobre o Projeto
 
