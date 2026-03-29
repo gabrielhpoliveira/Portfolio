@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Gabriel Henrique — Desenvolvedor Full Stack com experiência em React, Node.js, Laravel, TypeScript e PHP.">
+    <meta name="keywords" content="desenvolvedor, full stack, react, node.js, laravel, php, typescript, javascript, portfolio">
+    <meta name="author" content="Gabriel Henrique">
+    <title>Gabriel Henrique | Desenvolvedor Full Stack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Particles Background -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>GH<span class="logo-bracket"> /&gt;</span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#hero" class="nav-link active">Início</a></li>
+                <li><a href="#about" class="nav-link">Sobre</a></li>
+                <li><a href="#skills" class="nav-link">Habilidades</a></li>
+                <li><a href="#projects" class="nav-link">Projetos</a></li>
+                <li><a href="#contact" class="nav-link">Contato</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Disponível para oportunidades
+            </div>
+            <h1 class="hero-title">
+                <span class="hero-greeting">Olá, eu sou</span>
+                <span class="hero-name">Gabriel Henrique</span>
+                <span class="hero-role">
+                    <span class="typing-wrapper">
+                        <span id="typing-text"></span>
+                        <span class="cursor">|</span>
+                    </span>
+                </span>
+            </h1>
+            <p class="hero-description">
+                Estudante de Engenharia da Computação na UEMG, apaixonado por desenvolvimento web 
+                e criação de soluções digitais. Especializado em <strong>React</strong>, <strong>Node.js</strong>, 
+                <strong>Laravel</strong> e <strong>TypeScript</strong>.
+            </p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i>
+                    Ver Projetos
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <i class="fas fa-envelope"></i>
+                    Entre em Contato
+                </a>
+            </div>
+            <div class="hero-socials">
+                <a href="https://github.com/gabrielhpoliveira/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/gabrielhpoliveira/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:gabriel_henrique__pereira@outlook.com" class="social-link" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="code-window">
+                <div class="code-header">
+                    <div class="code-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <span class="code-title">gabriel.ts</span>
+                </div>
+                <div class="code-body">
+                    <pre><code><span class="code-keyword">interface</span> <span class="code-type">Developer</span> {
+  <span class="code-prop">name</span>: <span class="code-string">string</span>;
+  <span class="code-prop">role</span>: <span class="code-string">string</span>;
+  <span class="code-prop">stack</span>: <span class="code-string">string</span>[];
+  <span class="code-prop">available</span>: <span class="code-string">boolean</span>;
+}
+
+<span class="code-keyword">const</span> <span class="code-var">gabriel</span>: <span class="code-type">Developer</span> = {
+  <span class="code-prop">name</span>: <span class="code-value">"Gabriel Henrique"</span>,
+  <span class="code-prop">role</span>: <span class="code-value">"Full Stack Dev"</span>,
+  <span class="code-prop">stack</span>: [
+    <span class="code-value">"React"</span>, <span class="code-value">"Node.js"</span>,
+    <span class="code-value">"Laravel"</span>, <span class="code-value">"TypeScript"</span>
+  ],
+  <span class="code-prop">available</span>: <span class="code-bool">true</span>
+};</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;sobre /&gt;</span>
+                <h2 class="section-title">Quem sou eu</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        Sou <strong>Gabriel Henrique</strong>, estudante de <strong>Engenharia da Computação</strong> 
+                        na <strong>UEMG</strong>, com paixão por desenvolvimento web e criação de soluções que fazem 
+                        a diferença. Atuo como desenvolvedor <strong>Full Stack</strong>, com experiência tanto no 
+                        front-end quanto no back-end.
+                    </p>
+                    <p>
+                        Tenho conhecimento em tecnologias modernas como <strong>React</strong>, <strong>Node.js</strong>, 
+                        <strong>Laravel</strong>, <strong>TypeScript</strong> e <strong>PHP</strong>, além de experiência 
+                        com integração via <strong>APIs RESTful</strong>, banco de dados <strong>SQL</strong> e testes 
+                        funcionais de software.
+                    </p>
+                    <p>
+                        Utilizo ferramentas de <strong>Inteligência Artificial</strong> como <strong>Gemini</strong>, 
+                        <strong>Claude</strong> e <strong>Antigravity</strong> para potencializar meu desenvolvimento, 
+                        aumentando produtividade e qualidade de código.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="7">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Tecnologias</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="2">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Projetos</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Ferramentas IA</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-details">
+                    <div class="detail-card">
+                        <div class="detail-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="detail-info">
+                            <h4>Formação</h4>
+                            <p>Engenharia da Computação</p>
+                            <span>UEMG • 2030</span>
+                        </div>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-icon"><i class="fas fa-code"></i></div>
+                        <div class="detail-info">
+                            <h4>Foco</h4>
+                            <p>Desenvolvimento Full Stack</p>
+                            <span>Front-end & Back-end</span>
+                        </div>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-icon"><i class="fas fa-robot"></i></div>
+                        <div class="detail-info">
+                            <h4>IA no Dev</h4>
+                            <p>Gemini, Claude, Antigravity</p>
+                            <span>Produtividade & Qualidade</span>
+                        </div>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="detail-info">
+                            <h4>Localização</h4>
+                            <p>Minas Gerais, Brasil</p>
+                            <span>Disponível para trabalho</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;habilidades /&gt;</span>
+                <h2 class="section-title">Minhas Habilidades</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-categories">
+                <!-- Front-end -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h3>Front-end</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-skill="React">
+                            <div class="skill-icon"><i class="fab fa-react"></i></div>
+                            <span class="skill-name">React</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                        </div>
+                        <div class="skill-card" data-skill="JavaScript">
+                            <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-card" data-skill="TypeScript">
+                            <div class="skill-icon"><i class="fas fa-code"></i></div>
+                            <span class="skill-name">TypeScript</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="70"></div></div>
+                        </div>
+                        <div class="skill-card" data-skill="HTML/CSS">
+                            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                            <span class="skill-name">HTML/CSS</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="90"></div></div>
+                        </div>
+                        <div class="skill-card" data-skill="Bootstrap">
+                            <div class="skill-icon"><i class="fab fa-bootstrap"></i></div>
+                            <span class="skill-name">Bootstrap</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Back-end -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon"><i class="fas fa-server"></i></div>
+                        <h3>Back-end</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-skill="Node.js">
+                            <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                            <span class="skill-name">Node.js</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                        </div>
+                        <div class="skill-card" data-skill="Laravel">
+                            <div class="skill-icon"><i class="fab fa-laravel"></i></div>
+                            <span class="skill-name">Laravel</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="70"></div></div>
+                        </div>
+                        <div class="skill-card" data-skill="PHP">
+                            <div class="skill-icon"><i class="fab fa-php"></i></div>
+                            <span class="skill-name">PHP</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="70"></div></div>
+                        </div>
+                        <div class="skill-card" data-skill="SQL">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <span class="skill-name">SQL</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="65"></div></div>
+                        </div>
+                        <div class="skill-card" data-skill="APIs REST">
+                            <div class="skill-icon"><i class="fas fa-plug"></i></div>
+                            <span class="skill-name">APIs REST</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="75"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Others -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon"><i class="fas fa-tools"></i></div>
+                        <h3>Ferramentas & Outros</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-skill="Git">
+                            <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                            <span class="skill-name">Git</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                        </div>
+                        <div class="skill-card" data-skill="Gemini">
+                            <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                            <span class="skill-name">Gemini</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-card" data-skill="Claude">
+                            <div class="skill-icon"><i class="fas fa-robot"></i></div>
+                            <span class="skill-name">Claude</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-card" data-skill="Antigravity">
+                            <div class="skill-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
+                            <span class="skill-name">Antigravity</span>
+                            <div class="skill-bar"><div class="skill-progress" data-width="80"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;projetos /&gt;</span>
+                <h2 class="section-title">Meus Projetos</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1: Task Manager API -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/gabrielhpoliveira/" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="Ver código">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">Jest</span>
+                        </div>
+                        <h3 class="project-title">Task Manager API</h3>
+                        <p class="project-description">
+                            API RESTful completa para gerenciamento de tarefas com autenticação JWT, 
+                            CRUD completo, banco de dados SQL, testes automatizados com Jest e 
+                            documentação da API. Demonstra competência em back-end e integração via APIs.
+                        </p>
+                        <div class="project-features">
+                            <span><i class="fas fa-check"></i> API RESTful</span>
+                            <span><i class="fas fa-check"></i> Autenticação JWT</span>
+                            <span><i class="fas fa-check"></i> Testes com Jest</span>
+                            <span><i class="fas fa-check"></i> Banco SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Laravel Project -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/gabrielhpoliveira/" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="Ver código">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder laravel-bg">
+                            <i class="fab fa-laravel"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Laravel</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Blade</span>
+                        </div>
+                        <h3 class="project-title">Sistema de Gestão</h3>
+                        <p class="project-description">
+                            Sistema web completo desenvolvido com Laravel para gestão interna, incluindo 
+                            autenticação, dashboard, CRUD de recursos, migrations e integração com banco 
+                            de dados MySQL. Arquitetura MVC bem estruturada.
+                        </p>
+                        <div class="project-features">
+                            <span><i class="fas fa-check"></i> Laravel MVC</span>
+                            <span><i class="fas fa-check"></i> Migrations</span>
+                            <span><i class="fas fa-check"></i> Eloquent ORM</span>
+                            <span><i class="fas fa-check"></i> MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">&lt;contato /&gt;</span>
+                <h2 class="section-title">Vamos Conversar?</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">
+                    Estou disponível para oportunidades de trabalho e projetos interessantes. 
+                    Não hesite em entrar em contato!
+                </p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-cards">
+                    <a href="mailto:gabriel_henrique__pereira@outlook.com" class="contact-card" id="email-contact">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <h4>Email</h4>
+                        <p>gabriel_henrique__pereira@outlook.com</p>
+                    </a>
+                    <a href="https://www.linkedin.com/in/gabrielhpoliveira/" target="_blank" rel="noopener noreferrer" class="contact-card" id="linkedin-contact">
+                        <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+                        <h4>LinkedIn</h4>
+                        <p>/in/gabrielhpoliveira</p>
+                    </a>
+                    <a href="https://github.com/gabrielhpoliveira/" target="_blank" rel="noopener noreferrer" class="contact-card" id="github-contact">
+                        <div class="contact-icon"><i class="fab fa-github"></i></div>
+                        <h4>GitHub</h4>
+                        <p>/gabrielhpoliveira</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>GH<span class="logo-bracket"> /&gt;</span>
+                </div>
+                <p class="footer-text">
+                    Desenvolvido com <span class="heart">❤</span> por Gabriel Henrique • 2026
+                </p>
+                <div class="footer-socials">
+                    <a href="https://github.com/gabrielhpoliveira/" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/gabrielhpoliveira/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:gabriel_henrique__pereira@outlook.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
